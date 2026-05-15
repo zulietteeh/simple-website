@@ -1,13 +1,13 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #d36cdc;
+    background: #ebb381;
     color: #333;
 }
 
 header {
-    background: #b210baf5;
-    color: white;
+    background: #e39241f5;
+    color: rgb(10, 9, 9);
     padding: 20px;
     text-align: center;
 }
@@ -23,7 +23,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(13, 13, 13);
     text-decoration: none;
     font-weight: bold;
 }
@@ -32,7 +32,7 @@ nav ul li a {
     background: url('kitchen.jpg') center/cover no-repeat;
     padding: 80px 20px;
     text-align: center;
-    color: white;
+    color: rgb(5, 5, 5);
 }
 
 .content {
@@ -42,11 +42,11 @@ nav ul li a {
 }
 
 .card {
-    background: white;
+    background: rgb(196, 118, 34);
     padding: 15px;
     margin: 15px 0;
     border-radius: 8px;
-    border-left: 5px solid #c41bb9;
+    border-left: 5px solid #cea580;
 }
 
 .gear-list li {
@@ -65,15 +65,15 @@ input, textarea {
 }
 
 button {
-    background: #ab117f;
-    color: white;
+    background: #d63523;
+    color: rgb(14, 14, 14);
     padding: 10px;
     border: none;
     cursor: pointer;
 }
 
 footer {
-    background: #bf57d6;
+    background: #ea8532;
     color: white;
     text-align: center;
     padding: 10px;
@@ -109,7 +109,7 @@ footer {
 }
 /* Hover-efektit reseptikorteille */
 .card {
-    background: white;
+    background: rgb(221, 130, 11);
     padding: 15px;
     margin: 20px 0;
     border-radius: 10px;
@@ -146,7 +146,7 @@ footer {
 
 /* Kortit */
 .card {
-    background: white;
+    background: rgb(226, 139, 77);
     padding: 15px;
     border-radius: 10px;
     border-left: 5px solid #d35400;
@@ -208,7 +208,7 @@ footer {
 }
 
 .ingredients, .steps {
-    background: white;
+    background: rgb(231, 136, 64);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -225,4 +225,48 @@ footer {
     .recipe-content {
         flex-direction: column;
     }
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: 30px auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Slides */
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 12px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Fade animation */
+.fade {
+    animation: fadeEffect 1.2s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
 }
